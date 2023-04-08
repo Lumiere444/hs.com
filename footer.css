@@ -47,7 +47,26 @@ footer .container .noi-dung.about h2:before{
 footer .container .noi-dung.about p{
     color: #999;
 } 
-
+.form button{
+    background-color: #222;
+    color: #999;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form button:hover{
+    background-color: red;
+    color: black;
+}
+.form1 button{
+    background-color: #222;
+    color: #999;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form1 button:hover{
+    background-color: red;
+    color: black;
+}
 
 /*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
 .social-icon{
