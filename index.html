@@ -13,11 +13,12 @@
     
 </head>
 <body>
+    
     <div class="menupro">
     <img id="logo" src="https://cdn6.agoda.net/images/kite-js/logo/agoda/color-default.svg">
     <i onclick="showMenu()" id="menunho" class="fa fa-bars" style="font-size:24px"></i>
     <div id="menuvjp" class="menu">
-    <ul>
+    <ul id="menubig">
             <li><a href="">Trang chủ</a></li> 
             <li><a href="">Giới thiệu</a></li> 
             <li><a href="">Du lịch trong nước</a></li> 
@@ -25,12 +26,13 @@
             <li><a href="">Tin tức</a></li> 
             <li><a href="">Liên hệ</a></li>
             
-        </ul>
+    </ul>
     </div>
-    <div class="search-btn">
-        <i class="fa fa-search search-icon"></i>
     </div>
+<div class="search-btn">
+    <i class="fa fa-search search-icon"></i> <br>
 </div>
+
     <img id="m" src="https://pix10.agoda.net/hotelImages/2289891/0/977003911c64a2193cd2f85f47533a9e.jpg?ce=0&s=1024x768" alt="">
     <script>
         function showMenu(){
@@ -39,37 +41,101 @@
             } else {
                 document.getElementById('menuvjp').style.display='none';
             }
-        }
+        }   
     </script>
-    
+    <div class="h2">Khám phá thêm nhà cho thuê du lịch</div>
     <div class="content">
         <div class="box">
             <div class="box-item">
               <img src="https://cdn6.agoda.net/images/accommodation/other-property-types/entire-apartment.jpg"> <br>
-              Vé À ố show ở nhà hát thành phố <br> <br>
-              <i class="fa-solid fa-star"><span>4.6</span></i> <br>
-              Từ đ 700,000
+              <div class="thongtin">Căn hộ <br> 
+               <p>156.786 chỗ nghỉ</p>
+            </div>
             </div>
             <div class="box-item">
               <img src="https://cdn6.agoda.net/images/accommodation/other-property-types/entire-house.jpg"> <br>
-              Du thuyền <br> <br>
-              <i class="fa-solid fa-star"><span>4.6</span></i> <br>
-              Từ đ 690,000
+              <div class="thongtin">Nhà cho thuê <br> 
+                <p>517.703 chỗ nghỉ</p>
+            </div>
             </div>
             <div class="box-item">
                 <img src="https://cdn6.agoda.net/images/accommodation/other-property-types/entire-villa.jpg"> <br>
-              vé cáp treo <br> <br>
-              <i class="fa-solid fa-star"><span>4.6</span></i> <br>
-              Từ đ 240,000
+                <div class="thongtin">Biệt thự riêng<br> 
+              <p>181.167 chỗ nghỉ</p>
+            </div>
             </div>
             <div class="box-item">
               <img src="https://cdn6.agoda.net/images/accommodation/other-property-types/entire-bungalow.jpg"> <br>
-              Tour tham quan địa đạo củ chi  <br> <br>
-              <i class="fa-solid fa-star"><span>4.6</span></i><br>
-              Từ đ 700,000
+              <div class="thongtin">Nhà trệt <br> 
+              <p>8.801 chỗ nghỉ</p>
+            </div>
             </div>
             </div> 
       </div> 
+     
+      <div class="content2">
+        <div class="h3">Những chỗ nghỉ nổi bật khuyến nghị cho bạn:</div>
+        <div class="box2">
+            <div class="box-item2">
+              <img src="	https://pix8.agoda.net/hotelImages/1517561/-1/c8d7f0bb4cf45c2493dfaf257b0b1750.jpg?ca=16&ce=1"> <br>
+              <div class="van">
+              <h4>Cityhouse - Ariosa</h4> <br>
+              <i class="fa-solid fa-star" style="color: red;"><span>5</span></i>    <br>
+              Nằm ở vị trí trung tâm tại Bình Thạnh của Hồ Chí Minh, chỗ nghỉ này đặt quý khách ở gần các điểm thu hút và tùy chọn ăn uống thú vị. Đừng rời đi trước khi ghé thăm Bảo tàng Chứng tích chiến tranh nổi tiếng. <br>
+              <button class="place-buy-btn js-buy-ticket">VND 700.000</button>
+              
+            </div>
+            </div>
+            <div class="box-item2">
+              <img src="	https://pix8.agoda.net/hotelImages/941/9411958/9411958_19082615140080010014.jpg?ca=9&ce=1"> <br>
+              <div class="van">
+                <h4>An Binh House Saigon</h4><br> 
+              <i class="fa-solid fa-star" style="color: red;"><span>4.6</span></i> <br> 
+              Nằm ở vị trí trung tâm tại Bình Thạnh của Hồ Chí Minh, chỗ nghỉ này đặt quý khách ở gần các điểm thu hút và tùy chọn ăn uống thú vị. Đừng rời đi trước khi ghé thăm Bảo tàng Chứng tích chiến tranh nổi tiếng. <br>
+              <button class="place-buy-btn js-buy-ticket">VND 700.000</button>
+            </div>
+        </div>
+            <div class="box-item2">
+                <img src="	https://pix8.agoda.net/hotelImages/568/5684454/5684454_18081316440067440969.jpg?ca=0&ce=1"> <br>
+                <div class="van"> <h4>vé cáp treo</h4> <br> 
+                <i class="fa-solid fa-star" style="color: red;"><span>4.6</span></i> <br> 
+              Nằm ở vị trí trung tâm tại Bình Thạnh của Hồ Chí Minh, chỗ nghỉ này đặt quý khách ở gần các điểm thu hút và tùy chọn ăn uống thú vị. Đừng rời đi trước khi ghé thăm Bảo tàng Chứng tích chiến tranh nổi tiếng. <br>
+              <button class="place-buy-btn js-buy-ticket">VND 700.000</button>
+            </div>
+        </div>
+            </div> 
+      
+      
+        <div class="box2">
+            <div class="box-item2">
+              <img src="	https://pix8.agoda.net/hotelImages/6208508/-1/8784f8abce80d8d7a18e7b1b651ed0a2.jpg?ca=13&ce=1"> <br>
+              <div class="van">
+             <h4>Cityhouse - Ariosa</h4> <br>
+             <i class="fa-solid fa-star" style="color: red;"><span>4.6</span></i> <br> 
+              Nằm ở vị trí trung tâm tại Bình Thạnh của Hồ Chí Minh, chỗ nghỉ này đặt quý khách ở gần các điểm thu hút và tùy chọn ăn uống thú vị. Đừng rời đi trước khi ghé thăm Bảo tàng Chứng tích chiến tranh nổi tiếng. <br>
+              <button class="place-buy-btn js-buy-ticket">VND 700.000</button>
+            </div>
+        </div> 
+            <div class="box-item2">
+              <img src="	https://pix8.agoda.net/hotelImages/18588481/-1/3fd29837e57bfead7de5da6f0586d290.jpg?ca=16&ce=1"> <br>
+              <div class="van">
+             <h4>An Binh House Saigon</h4><br> 
+             <i class="fa-solid fa-star" style="color: red;"><span>4.6</span></i> <br> 
+              Nằm ở vị trí trung tâm tại Bình Thạnh của Hồ Chí Minh, chỗ nghỉ này đặt quý khách ở gần các điểm thu hút và tùy chọn ăn uống thú vị. Đừng rời đi trước khi ghé thăm Bảo tàng Chứng tích chiến tranh nổi tiếng. <br>
+              <button class="place-buy-btn js-buy-ticket">VND 700.000</button> 
+            </div>
+        </div>
+            <div class="box-item2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Dubai_Mall-Dubai3161.JPG/1024px-Dubai_Mall-Dubai3161.JPG"> <br>
+                <div class="van">
+            <h4>vé cáp treo</h4> <br> 
+             <i class="fa-solid fa-star" style="color: red;"><span>4.6</span></i> <br> 
+              Nằm ở vị trí trung tâm tại Bình Thạnh của Hồ Chí Minh, chỗ nghỉ này đặt quý khách ở gần các điểm thu hút và tùy chọn ăn uống thú vị. Đừng rời đi trước khi ghé thăm Bảo tàng Chứng tích chiến tranh nổi tiếng. <br>
+              <button class="place-buy-btn js-buy-ticket">VND 700.000</button>
+            </div>
+        </div>
+      </div>
+    </div> 
       <footer>
         <div class="container">
             
@@ -79,10 +145,10 @@
 
                     Agoda.com là thành viên của Tập đoàn Booking Holdings, nhà cung cấp dịch vụ du lịch trực tuyến & các dịch vụ có liên quan hàng đầu thế giới.</p>
                 <ul class="social-icon">
-                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa fa-facebook"></i> <br></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i> <br></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i> <br></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i> <br></a></li>
                 </ul>
             </div>
             
@@ -101,20 +167,20 @@
                 <h2>Thông Tin Liên Hệ</h2>
                 <ul class="info">
                     <li>
-                        <span><i class="fa fa-map-marker"></i></span>
+                        <span><i class="fa fa-map-marker"></i> <br></span>
                         <span>Đường Số 1<br />
                             Quận 1, Thành Phố Hồ Chí Minh<br />
                             Việt Nam</span>
                     </li>
                     <li>
-                        <span><i class="fa fa-phone"></i></span>
-                        <p><a href="#">+84 123 456 789</a>
+                        <span><i class="fa fa-phone"></i> <br></span>
+                        <p><a href="#">+84 123 456 789</a>  
                             <br />
                             <a href="#">+84 987 654 321</a></p>
                     </li>
                     <li>
-                        <span><i class="fa fa-envelope"></i></span>
-                        <p><a href="#">diachiemail@gmail.com</a></p>
+                        <span><i class="fa fa-envelope"></i> <br></span>
+                        <p><a href="#">sangpnhps34495@fpt.edu.vn</a></p>
                    </li>
                     <li>
                         <form class="form">

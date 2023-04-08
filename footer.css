@@ -17,17 +17,17 @@ footer .container{
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1100px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 
 footer .container .noi-dung{
-    margin-right: 30px;
+    width: calc(100%/3);
 }
 footer  .container .noi-dung.about{
-    width: 40%;
-    
+    /* width: ;
+    float: right; */
 }
 footer .container .noi-dung.about h2{
     position: relative;
@@ -46,7 +46,8 @@ footer .container .noi-dung.about h2:before{
 }
 footer .container .noi-dung.about p{
     color: #999;
-}
+} 
+
 
 /*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
 .social-icon{
@@ -99,7 +100,8 @@ footer .container .noi-dung.about p{
 }
 .links{
    position: relative;
-   width: 25%;
+   display: block;
+   
 }
 .links ul li{
     list-style: none;
@@ -130,7 +132,7 @@ footer .container .noi-dung.about p{
     background: #f00;
 }
 .contact{
-    width: calc(35% - 60px);
+    
     margin-right: 0 !important;
 }
 .contact .info{
@@ -153,10 +155,20 @@ footer .container .noi-dung.about p{
     text-decoration: none;
 }
 
-@media  (min-width: 240px){
+@media  (max-width: 740px){
     footer{
         padding: 40px;
-             }
+     }
+     footer  .container .noi-dung.about{
+     width: 80%;
+     }
+     footer .container .noi-dung.links{
+        width: 80%;
+     }
+     footer .container .noi-dung.contact{
+        width: 80%;
+     }
+            
     footer .container{
         flex-direction: column;
     }
@@ -167,7 +179,53 @@ footer .container .noi-dung.about p{
     footer .container, .noi-dung.about, .links, .contact{
         width: 100%;
     }
+    .search-btn{
+        display: none;
+    }
+    #menunho{
+        
+    }
+    
+}
+@media (min-width: 740px )and (max-width: 1023px){
+    footer{
+        padding: 40px;
+     }
+     footer  .container .noi-dung.about{
+     width: 80%;
+     }
+     footer .container .noi-dung.links{
+        width: 80%;
+     }
+     footer .container .noi-dung.contact{
+        width: 80%;
+     }
+            
+    footer .container{
+        flex-direction: column;
+    }
+    footer .container .noi-dung{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container, .noi-dung.about, .links, .contact{
+        width: 100%;
+    }
+    .search-btn{
+        display: none;
+    }
+    #menunho{
+        
+    }
+    
 }
 @media all and (min-width: 992px) {
+    footer .container .noi-dung.links h2{
+        margin-left: 20%;
+    }
+    footer .container .noi-dung.links li{
+        margin-left: 20%;
+    }
     
-  }
+}
+  
